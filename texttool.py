@@ -3,6 +3,16 @@
 
 
 def process_line(line):
+"""
+    Analyse une ligne de commande et exécute l'action appropriée.
+
+    Args:
+        line (str): La ligne contenant la commande et le texte.
+
+    Returns:
+        str: Le résultat de l'opération ou un message d'erreur.
+"""
+
     if " " not in line:
         return "No command or no argument given"
 
